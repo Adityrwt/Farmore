@@ -59,13 +59,14 @@ const Features = () => {
         </div>
         <div className="feature-card">
           <div className="feature-image">
-            <img src="https://images.unsplash.com/photo-1595665593673-bf1ad72905c0?auto=format&fit=crop&w=800&q=80" alt="Market Access" />
+            <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80" alt="Cost & Profit Optimization" />
           </div>
           <div className="feature-content">
-            <h3>Market Access</h3>
-            <p>Direct connection to buyers and better prices</p>
+            <h3>Cost & Profit Optimization</h3>
+            <p>Smart analytics to maximize farm profitability</p>
           </div>
         </div>
+        {/* Market Access card removed */}
         <div className="feature-card">
           <div className="feature-image">
             <img src="https://images.unsplash.com/photo-1590682680695-43b964a3ae17?auto=format&fit=crop&w=800&q=80" alt="Expert Support" />

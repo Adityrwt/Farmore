@@ -13,10 +13,8 @@ function App() {
       <Navbar />
       <Header />
       <main className="main-content">
-        <h1 className="main-heading">Welcome to Farmore</h1>
-        <p className="main-subtitle">Smart Crop Recommendations & Yield Predictions</p>
-        <div className="hero-description">
-          <p>Empowering farmers with AI-driven insights for better crop decisions</p>
+        <div className="container">
+          
         </div>
         <About />
         <Features />
