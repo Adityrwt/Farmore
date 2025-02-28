@@ -25,7 +25,7 @@ app.post("/api/predict/crop", async (req, res) => {
       const responseData = await response.json(); 
       res.json(responseData);
     } catch (error) {
-      console.log(error);
+      console.log(error, "Error Occured");
     }
 });
 
