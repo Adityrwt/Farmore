@@ -2,33 +2,33 @@
 
 ## Tech Stack
 ### Frontend
-- Streamlit (for interactive web interface)
-- Plotly (for interactive data visualization)
+- React 
 
 ### Backend & Machine Learning
 - Python
 - Pandas (for data manipulation)
 - NumPy (for numerical operations)
 - Scikit-learn (for machine learning models)
-- XGBoost (for gradient boosting)
-- Joblib (for model serialization)
+- Joblib, Pickle (for model serialization)
+- Express (acts as proxy server)
 
 ### Data Storage
 - CSV files for data storage and manipulation
 
 ## Steps to Run the Project
 ### Prerequisites
-- Python 3.8 or higher
+- Python 3.12 or higher
 - pip (Python package installer)
 
 ### Installation Steps
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ongc.git
-cd ongc
+git clone https://github.com/Adityrwt/Farmore.git
+cd Farmore
 ```
 2. Create a virtual environment:
 ```bash
+cd src/backend
 python -m venv venv
 source venv/bin/activate
 ```
@@ -40,12 +40,22 @@ pip install -r requirements.txt
 ### Running the Application
 4. Train the model:
 ```bash
-python train_model.py
+python server.py
 ```
-5. Launch the Streamlit interface:
+5. Run Express Server in new Terminal:
 ```bash
-streamlit run app.py
+cd server
+npm i 
+npm run dev 
 ```
-6. Open your web browser and navigate to:
-The application will automatically open at http://localhost:8501
+
+
+6. Run The React Server for Frontend:
+```bash
+cd frontend 
+npm i
+npm run dev
+```
+
+7. Open the web app inside a browser at url : http://localhost:5173
 
