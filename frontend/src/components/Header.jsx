@@ -141,7 +141,21 @@ const Header = () => {
                 <input type="number" name="rainfall" placeholder="Rainfall (mm)" required step="0.01" />
                 <input type="number" name="temperature" placeholder="Temperature (°C)" required step="0.01" />
                 <input type="number" name="soil_quality" placeholder="Soil Quality (1-10)" required min="1" max="10" step="0.1" />
-                <input type="text" name='crop' placeholder='Crop' required/>
+                <select name="crop" required>
+                  <option value="">Select a crop</option>
+                  <option value="Rice">Rice</option>
+                  <option value="Banana">Banana</option>
+                  <option value="Maize">Maize</option>
+                  <option value="Moong(Green Gram)">Moong(Green Gram)</option>
+                  <option value="Urad">Urad</option>
+                  <option value="Arhar/Tur">Arhar/Tur</option>
+                  <option value="Cotton(Lint)">Cotton(Lint)</option>
+                  <option value="Masoor">Masoor</option>
+                  <option value="Grapes">Grapes</option>
+                  <option value="Mango">Mango</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Papaya">Papaya</option>
+                </select>
                 <input type="text" name='season' placeholder='Enter 1:Kharif, 2:Rabi, 3:Whole Year' required/>
                 <input type="number" name="humidity" placeholder="Humidity (%)" required step="0.01" />
                 <input type="number" name="soil_moisture" placeholder="Soil Moisture" required step="0.01" />
