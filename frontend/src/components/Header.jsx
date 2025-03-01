@@ -116,13 +116,13 @@ const Header = () => {
             </button>
             {showCropForm && (
               <form onSubmit={handleCropSubmit} className="prediction-form">
-                <input type="number" name="nitrogen" placeholder="Nitrogen (N)" required step="0.01" />
-                <input type="number" name="phosphorus" placeholder="Phosphorus (P)" required step="0.01" />
-                <input type="number" name="potassium" placeholder="Potassium (K)" required step="0.01" />
-                <input type="number" name="temperature" placeholder="Temperature (°C)" required step="0.01" />
-                <input type="number" name="humidity" placeholder="Humidity (%)" required step="0.01" />
-                <input type="number" name="ph" placeholder="pH value" required step="0.01" />
-                <input type="number" name="rainfall" placeholder="Rainfall (mm)" required step="0.01" />
+                <input type="number" name="nitrogen" placeholder="Nitrogen (N) [0-140]" required step="0.01" />
+                <input type="number" name="phosphorus" placeholder="Phosphorus (P) [5-145]" required step="0.01" />
+                <input type="number" name="potassium" placeholder="Potassium (K) [5-205]" required step="0.01" />
+                <input type="number" name="temperature" placeholder="Temperature (°C) [8-45]" required step="0.01" />
+                <input type="number" name="humidity" placeholder="Humidity (%) [14-100]" required step="0.01" />
+                <input type="number" name="ph" placeholder="pH value [3.5-10]" required step="0.01" />
+                <input type="number" name="rainfall" placeholder="Rainfall (mm) [20-300]" required step="0.01" />
                 <button type="submit" disabled={loading}>
                   {loading ? 'Processing...' : 'Get Recommendation'}
                 </button>
@@ -142,7 +142,7 @@ const Header = () => {
                 <input type="number" name="temperature" placeholder="Temperature (°C)" required step="0.01" />
                 <input type="number" name="soil_quality" placeholder="Soil Quality (1-10)" required min="1" max="10" step="0.1" />
                 <input type="text" name='crop' placeholder='Crop' required/>
-                <input type="text" name='season' placeholder='Season' required/>
+                <input type="text" name='season' placeholder='Enter 1:Kharif, 2:Rabi, 3:Whole Year' required/>
                 <input type="number" name="humidity" placeholder="Humidity (%)" required step="0.01" />
                 <input type="number" name="soil_moisture" placeholder="Soil Moisture" required step="0.01" />
 

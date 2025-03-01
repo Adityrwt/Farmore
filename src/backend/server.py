@@ -55,8 +55,19 @@ def predict_yield():
     humidity = float(data.get('humidity'))
     soil_moisture = float(data.get('soil_moisture'))
     area = float(data.get('area'))
-    season = data.get('season')
+    season_num = int(data.get('season'))
     crop = data.get('crop')
+    
+    # Map numeric input to season names
+    season_map = {
+        1: 'Kharif',
+        2: 'Rabi',
+        3: 'Whole Year'
+    }
+    
+    season = season_map.get(season_num)
+    if not season:
+        return jsonify({'error': 'Invalid season number. Use 1 for Kharif, 2 for Rabi, 3 for Whole Year'}), 400
     
     season_encoded = le_season_yield.transform([season])[0]
     crop_encoded = le_crop_yield.transform([crop])[0]
